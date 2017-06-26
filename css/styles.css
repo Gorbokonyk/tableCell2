@@ -1,0 +1,122 @@
+
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-size: 20px;
+}
+
+#header,
+#footer {
+    min-height: 40px;
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    font-size: 2.5em;
+    
+}
+
+.container {
+    position:relative;
+    width: 100%;
+    height: 1500px;
+    
+  
+}
+
+#sidebar-wrap {
+    float: left;
+    position: absolute;
+    width:10%;
+    height:100%;
+    z-index:1;
+    background-color: #f1f1f1;
+    
+}   
+
+#main-wrap {
+   /* position: relative;*/
+    width: 90%;
+    padding-left: 188px;
+    float: left;
+    overflow: auto;
+    height: 1000px;
+
+}
+
+  
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::: TABLE BOX SIZING AND STYLE ::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+table {
+  width: 100%;
+}
+
+td, th {
+  padding: 10px 20px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+
+/*:::::::::::::::::::::SIDE MENU:::::::::::::::::::::::::::*/
+nav{
+  
+  margin: 5px 0 5px 0;
+}
+
+ul {
+    
+    margin:0;
+    padding:150px 0 0 0;
+    width: 10%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    background-color: #f1f1f1;
+    
+}
+
+li{
+  padding-left:1em;
+  
+}
+
+li a {
+    display:block;
+    padding:0 0.5em;
+    box-sizing: border-box;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif ;
+    line-height:3;
+    text-decoration:none;  
+   
+}
+
+li a :hover{
+      color:red;
+    }
+    
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::*/
+@media screen and (max-width: 920px) and (min-width: 300px) and (min-width: 200px) {
+  body {
+    font-size: 90%;
+  }
+  #sidebar-wrap {
+    display: none;
+    
+  }
+  #main-wrap {
+    width: 100%;
+    padding-left: 0s;
+    overflow: auto;
+    
+}
